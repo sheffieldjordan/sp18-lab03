@@ -55,7 +55,7 @@ contract('GoodAuctionTest', function(accounts) {
 				await anotherNotPoisoned.bid(args._smallAmount);
 				cleanBalance = await notPoisoned.getBalance.call();
 				let anotherCleanBalance = await anotherNotPoisoned.getBalance.call();
-				/* Optimized for Truffle, for now 
+				/* Optimized for Truffle, for now
 				 * Should be `.equal` but value is not sent back currently
 				 */
 				assert.isBelow(anotherCleanBalance.valueOf(), args._bigAmount,
