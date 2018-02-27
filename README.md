@@ -1,14 +1,6 @@
 # Attack the Auction
-Welcome to lab03. In this assignment you'll be getting acclimated with external calls, inheritance, and smart contract security.
 
-## Homework Instructions
-Your task is to complete both `BadAuction.sol` and `GoodAuction.sol` such that they are each, respectively, vulnerable and protected from three specific security vulnerabilities. Notice that both contracts inherit from `AuctionInterface.sol`.
-
-The contracts `Poisoned.sol` and `NotPoisoned.sol` are players in an adversarial system. Both can conduct external calls to the auctions in order to place bids and lower their bid if they are the current highest bidder. While `NotPoisoned.sol` will act as expected, `Poisoned.sol` will attempt to take advantage of one of `BadAuction.sol`'s security vulnerabilities. **You Should NOT Change These Contracts**
-
-Implement both auctions in order to demonstrate your understanding of what makes smart contracts vulnerable and how to secure them.
-
-**All work should be done in _contracts/BadAuction.sol_ and _contracts/GoodAuction.sol_**
+The contracts `Poisoned.sol` and `NotPoisoned.sol` are players in an adversarial system. Both can conduct external calls to the auctions in order to place bids and lower their bid if they are the current highest bidder. While `NotPoisoned.sol` will act as expected, `Poisoned.sol` will attempt to take advantage of one of `BadAuction.sol`'s security vulnerabilities. 
 
 ## Baisc Rules
 * In any situation, a bidder with a lower or the same bid than the current highest bidder should have no effect on the contract
