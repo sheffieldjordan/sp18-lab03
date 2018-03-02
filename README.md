@@ -1,3 +1,5 @@
+MY PARTNER IS SURYA DUGGIRALA
+
 # Attack the Auction
 
 The contracts `Poisoned.sol` and `NotPoisoned.sol` are players in an adversarial system. Both can conduct external calls to the auctions in order to place bids and lower their bid if they are the current highest bidder. While `NotPoisoned.sol` will act as expected, `Poisoned.sol` will attempt to take advantage of one of `BadAuction.sol`'s security vulnerabilities. 
