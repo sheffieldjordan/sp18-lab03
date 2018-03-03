@@ -9,10 +9,10 @@ contract GoodAuction is AuctionInterface {
 	mapping(address => uint) public refunds;
 
     modifier canReduce() {
-        require(msg.sender == highestBidder);
-		_;
-	}
-
+         if (msg.sender == highestBidder) {
+					 _;
+				 }
+		}
 
 	/* 	Bid function, now shifted to pull paradigm
 		Must return true on successful send and/or bid, bidder
